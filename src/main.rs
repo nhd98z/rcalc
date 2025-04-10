@@ -28,6 +28,9 @@ fn main() {
         // Remove all whitespace
         let input = readline.replace(" ", "");
 
+        // Remove all commas
+        let input = input.replace(",", "");
+
         // Skip if empty
         if input.is_empty() {
             continue;
